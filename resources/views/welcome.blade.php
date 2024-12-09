@@ -8,7 +8,7 @@
 </head>
 <body>
     <div id="app">
-        <button @click="count++">{{ count }}</button>
+        {{-- <button @click="count++">{{ count }}</button> --}}
     </div>
 </body>
 </html>

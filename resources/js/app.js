@@ -1,16 +1,12 @@
 import { createApp } from 'vue';
+import App from './App.vue'; // Main App component
+import router from './router';
+import pinia from './store';
 
-import ExampleComponent from './components/ExampleComponent.vue';
-const app = createApp({
-    data() {
-      return {
-        count: 0
-      }
-    },
+const app = createApp(App);
 
-    components: {
-        ExampleComponent
-    }
-  })
-  
-  app.mount('#app')
+// Use Router and Pinia
+app.use(router);
+app.use(pinia);
+
+app.mount('#app');

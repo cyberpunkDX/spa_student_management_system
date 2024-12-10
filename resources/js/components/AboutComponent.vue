@@ -1,11 +1,11 @@
 <template>
     <div>
-        <h1>Hello, Vue in Laravel!</h1>
+        <h1>Welcome to About</h1>
     </div>
 </template>
 
 <script>
 export default {
-    
+    name: 'HomeComponent',
 };
 </script>

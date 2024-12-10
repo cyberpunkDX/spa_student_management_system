@@ -3,6 +3,8 @@ import App from './App.vue'; // Main App component
 import router from './router';
 import pinia from './store';
 
+import "../bootstrap/css/bootstrap.css";
+
 const app = createApp(App);
 
 // Use Router and Pinia

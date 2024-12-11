@@ -15,10 +15,10 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('user_id')->nullable();
             $table->string('matriculation_number')->unique();
+            // $table->string('d_code')->unique();
             $table->unsignedSmallInteger('level_of_study');
             $table->unsignedBigInteger('department_id')->nullable();
             $table->timestamps();
-
             $table->foreign('department_id')
                 ->references('id')
                 ->on('departments')

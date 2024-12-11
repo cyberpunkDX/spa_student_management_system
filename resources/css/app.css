@@ -1,3 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.hero{
+    background: url("../images/bg-01.jpg");
+    background-size: cover;
+    background-color: darkslategrey;
+    background-blend-mode: overlay;
+    padding: 30px;
+}
+
+.bg-light-gray{
+    background-color: rgb(242, 244, 244);
+}

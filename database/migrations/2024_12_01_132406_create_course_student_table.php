@@ -16,6 +16,8 @@ return new class extends Migration
             $table->unsignedBigInteger('course_id');
             $table->unsignedBigInteger('student_id');
             $table->boolean("is_carried_over")->default(false);
+            $table->double("score")->nullable();
+            $table->string("grade")->nullable();
             $table->timestamps();
             $table->foreign('course_id')->references('id')->on('courses')->onDelete('cascade');
             $table->foreign('student_id')->references('id')->on('students')->onDelete('cascade');

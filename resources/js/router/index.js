@@ -1,4 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
+import CourseComponent from '../components/dashboard/partials/CourseComponent.vue';
+import ProfileComponent from '../components/dashboard/partials/ProfileComponent.vue';
+import PaymentComponent from '../components/dashboard/partials/PaymentComponent.vue';
 
 const routes = [
     {
@@ -20,6 +23,11 @@ const routes = [
         path: '/dashboard',
         name: 'dashboard',
         component: () => import('../components/dashboard/DashboardComponent.vue'),
+        children: [
+            { path: '/', component: ProfileComponent },
+            { path: '/study-course', component: CourseComponent },
+            { path: '/payments', component: PaymentComponent },
+          ],
     },
 ];
 

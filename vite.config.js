@@ -4,6 +4,8 @@ import laravel from 'laravel-vite-plugin';
 import { fileURLToPath, URL } from 'node:url';
 
 export default defineConfig({
+    input: './resources/js/app.js',
+      
     plugins: [
         laravel({
             input: ['resources/css/app.css', 'resources/js/app.js'],
